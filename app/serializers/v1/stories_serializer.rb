@@ -1,6 +1,6 @@
 module V1
   class StoriesSerializer < ActiveModel::Serializer
-    attributes :title, :create_at, :abstract, :id
+    attributes :title, :created_at, :abstract, :id
     has_one :user, serializer: V1::UserSerializer
 
     def abstract
